@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#main .container {
+    width: 80%;
+    /* To make the container in center */
+    margin: 0 auto;
+    height: 80vh;
+}
+
+.container form {
+    position: relative;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 60vh;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+form .title {
+    color: #fff;
+}
+
+form .inputPanel {
+    width: 100%;
+    background: #fff;
+    padding: 10px 15px;
+    margin: 10px 0 0 0;
+    transition: 250ms ease-in-out;
+}
+
+form input[type=email] {
+    opacity: .35;
+}
+
+form .inputPanel:focus {
+    background-color: steelblue;
+    opacity: .35;
+    transition: 250ms ease-in-out;
+}
+
+form .inputPanel:hover .inputPanel::placeholder {
+    color: #fff;
+}
+form .btns {
+    padding: 20px;
+}
+
+.btns .reset, .btns .submit {
+    padding: 10px 15px;
+    background: none;
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 5px #000;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+
+.btns .reset:hover, .btns .submit:hover {
+    background: none;
+    transition: 250ms ease-in-out;
+} 
